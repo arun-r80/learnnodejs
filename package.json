@@ -1,0 +1,19 @@
+{
+  "name": "todoapi",
+  "version": "1.0.0",
+  "description": "Create NodeJS API for to-do app",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "start-dev": "NODE_ENV=\"dev\" node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arun-r80"
+  },
+  "keywords": [
+    "to-do"
+  ],
+  "author": "Arun Ramamurthy",
+  "license": "ISC"
+}
