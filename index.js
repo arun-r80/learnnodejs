@@ -1,19 +1,16 @@
-
-const http = require('http');
-const express = require('express');
-const env = require('./env');
-const config = env.envconfig(process.env.NODE_ENV || 'dev');
-
-
+const http = require("http");
+const express = require("express");
+const env = require("./src/env");
+const config = env.envconfig(process.env.NODE_ENV || "dev");
 
 const PORT = config.port;
 const host = config.host;
 const app = express();
-app.get('/', (req, res)=> {
-    res.send('Hello, World!!');
-})
+app.get("/", (req, res) => {
+  res.send("Hello, World!!");
+});
 
-app.listen(PORT, ()=> console.log("Server Started!!"))
+app.listen(PORT, () => console.log("Server Started!!", process.env.NODE_ENV));
 
 // const http = require('http');
 
