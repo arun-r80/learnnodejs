@@ -5,19 +5,19 @@ envConfig = (env) => {
     case "dev":
       return {
         host: "127.0.0.1",
-        port: 3001,
+        port: 8080,
       };
       break;
     case "production":
       return {
         host: "127.0.0.1",
-        port: 3001,
+        port: 8080,
       };
       break;
     default:
       return {
         host: "127.0.0.1",
-        port: 3001,
+        port: 8080,
       };
   }
 };

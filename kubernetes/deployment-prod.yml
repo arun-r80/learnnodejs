@@ -13,10 +13,10 @@ spec:
     spec:
       containers:
         - name: saena-api
-          image: arunr80/saena-as-api
+          image: "arunr80/saena-as-api:k8"
           resources:
             limits:
               memory: "128Mi"
               cpu: "500m"
           ports:
-            - containerPort: 3001
+            - containerPort: 8080
